@@ -4,8 +4,10 @@
 
 feature '1. see a list of links on the homepage' do
   scenario 'list links' do
-    visit '/'
-    Link.create("www.google.com")
-    expect(page).to have_link("wwww.google.com")
+    Link.create(title: "google", url: "www.google.com")
+    visit '/links'
+    within('url#Links') do
+      expect(page).to have_content("Makers Academy")
+    end
   end
 end
