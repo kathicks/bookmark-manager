@@ -40,11 +40,9 @@ I want to be able to filter them by tags
 ```
 ## Domain Model
 
-User Story 1:
-
 | Objects    |  Messages    |
 |------------|--------------|
-| User     |              |
+| User       |              |
 | Links      | show         |
 | Account    | add_links    |
 | Links      | tag          |
