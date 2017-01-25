@@ -24,18 +24,35 @@
         1,
         null,
         1,
+        null,
         1,
-        0,
+        3,
+        3,
+        null,
+        null,
+        1,
+        1,
         null,
         null,
         1,
         1,
         1,
-        1,
         null,
         null,
         null,
         1,
+        null
+      ],
+      "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/creating_links_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/pedrocastanheira/Projects/week4/bookmark_manager/spec/features/feature_tests_spec.rb": [
@@ -54,6 +71,6 @@
         null
       ]
     },
-    "timestamp": 1485350802
+    "timestamp": 1485355193
   }
 }
