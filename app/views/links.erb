@@ -1,3 +1,11 @@
+<p>List of links:</p>
 
-<p> <%=@url%></p>
-<p> <%=@title%></p>
+<ul id="links">
+  <% @links.each do |link| %>
+    <li>
+      Title: <%= link.title %>
+      url: <%= link.url %>
+    </li>
+
+  <% end %>
+</ul>
