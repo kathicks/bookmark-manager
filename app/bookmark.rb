@@ -3,6 +3,9 @@ require_relative 'models/link.rb'
 
 class Bookmark < Sinatra::Base
 
+  ENV["RACK_ENV"] ||= "development"
+  # set :environment, :development - different way of setting an environment to default mode
+
   get '/links' do
     @links = Link.all
     erb :'links/index'
