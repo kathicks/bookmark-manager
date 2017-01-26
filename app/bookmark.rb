@@ -1,13 +1,10 @@
 ENV["RACK_ENV"] ||= "development"
 
 require 'sinatra/base'
-# require './app/models/link'
-# require './app/models/tag'
 require_relative 'data_mapper_setup'
 
 class Bookmark < Sinatra::Base
 
-  # ENV["RACK_ENV"] ||= "development"
   # set :environment, :development - different way of setting an environment to default mode
 
   get '/links' do
@@ -25,6 +22,12 @@ class Bookmark < Sinatra::Base
     link.tags << tag
     link.save
     redirect '/links'
+  end
+
+  get '/tags/:name' do |n|
+    tag_name = n.gsub('_', ' ').split.map(&:capitalize).join(' ')
+    @links = Tag.all(name: tag_name ).links
+    erb :'links/index'
   end
 
   # start the server if ruby file executed directly
