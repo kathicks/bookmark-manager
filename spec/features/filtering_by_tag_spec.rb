@@ -2,7 +2,7 @@
 # So that I can quickly find links on a particular topic
 # I would like to filter links by tag
 
-feature 'filtering by tag' do
+feature '4.filtering by tag' do
   scenario 'a user would like to filter links by their tags' do
     visit '/links'
     click_button('Add Link')
