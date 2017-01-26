@@ -2,7 +2,7 @@
 # So that I can organise my many links into different categories for ease of search
 # I would like to tag links in my bookmark manager
 
-feature 'add tags to link' do
+feature '3. add tags to link' do
   scenario 'a user would like to tag links in her bookmark manager' do
     visit '/links'
     click_button('Add Link')
