@@ -4,6 +4,8 @@
 
 feature 'add multiple tags' do
   scenario 'a user would like to add multiple tags to the links in their bookmark manager' do
+    register
+
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')

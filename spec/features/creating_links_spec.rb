@@ -1,6 +1,8 @@
 
 feature '2. add a link' do
   scenario 'add the site address and title to my bookmark manager' do
+    register
+    
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')

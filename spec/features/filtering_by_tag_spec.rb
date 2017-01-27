@@ -4,6 +4,8 @@
 
 feature '4.filtering by tag' do
   scenario 'a user would like to filter links by their tags' do
+    register
+    
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')

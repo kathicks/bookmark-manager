@@ -2,6 +2,7 @@ ENV['RACK_ENV'] = 'test'
 
 require './app/models/link'
 require './app/models/tag'
+require 'web_helper'
 
 
 require 'coveralls'
