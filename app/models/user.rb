@@ -13,6 +13,8 @@ class User
     self.password_digest = BCrypt::Password.create(password)
   end
 
+  validates_presence_of :email
+  validates_format_of :email, as: :email_address
   validates_confirmation_of :password
 
   has n, :links, :through => Resource

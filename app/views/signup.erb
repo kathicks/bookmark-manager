@@ -2,7 +2,7 @@
 
 <form id="signup" action='/registration' method='post'>
   <label>Enter your email:
-    <input type="text" name="email" value="<%=@email%>">
+    <input type="email" name="email" value="<%=@email%>" required>
   </label>
   <label>Create a password:
     <input type="text" name="password">
@@ -15,4 +15,12 @@
 
 <% if flash[:mismatch] %>
 <%= flash[:mismatch] %>
+<%end%>
+
+<% if flash[:missing_email] %>
+<%= flash[:missing_email] %>
+<%end%>
+
+<% if flash[:invalid_email] %>
+<%= flash[:invalid_email] %>
 <%end%>

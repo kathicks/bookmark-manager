@@ -4,6 +4,8 @@ require 'sinatra/base'
 require_relative 'data_mapper_setup'
 require 'sinatra/flash'
 
+EMAIL_REGEX = /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+
 class Bookmark < Sinatra::Base
 
   enable :sessions
@@ -27,21 +29,21 @@ class Bookmark < Sinatra::Base
       @email = session[:email]
       erb :'signup'
     end
-
   end
 
   post '/registration' do
-    user = User.create(email: params[:email],
+    user = User.new(email: params[:email],
                        password: params[:password],
                        password_confirmation: params[:confirm_password])
-    session[:user_id] = user.id
-    session[:email] = params[:email]
-    if user.id.nil?
-      flash[:mismatch] ='Password and confirmation password do not match'
-      redirect '/sign_up'
-
-    else
+    if user.save
+      session[:user_id] = user.id
       redirect '/links'
+    else
+      flash[:mismatch] ='Password and confirmation password do not match' if params[:password] != params[:confirm_password]
+      flash[:missing_email] = 'No email entered' if params[:email].empty?
+      flash[:invalid_email] = 'Invalid email entered' if !(params[:email] =~ EMAIL_REGEX)
+      session[:email] = params[:email]
+      redirect '/sign_up'
     end
   end
 
