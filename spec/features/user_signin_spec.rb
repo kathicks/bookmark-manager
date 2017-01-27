@@ -8,10 +8,15 @@ feature 'having a sign up page' do
   end
 
   scenario 'user can enter an email and password, and submits the form' do
-    register
+
+    visit '/sign_up'
+    fill_in(:email, with: 'hello@mail.com')
+    fill_in(:password, with: '1234')
+    fill_in(:confirm_password, with: '1234')
+    click_button('Submit')
 
     expect(current_path).to eq '/links'
-    expect(page).to have_content('Welcome, kat_hicks@gmail.com!')
+    expect(page).to have_content('Welcome, hello@mail.com!')
     expect{register}.to change(User, :count).by(1)
   end
 end

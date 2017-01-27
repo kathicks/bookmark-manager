@@ -42,6 +42,7 @@ class Bookmark < Sinatra::Base
       flash[:mismatch] ='Password and confirmation password do not match' if params[:password] != params[:confirm_password]
       flash[:missing_email] = 'No email entered' if params[:email].empty?
       flash[:invalid_email] = 'Invalid email entered' if !(params[:email] =~ EMAIL_REGEX)
+      flash[:duplicate_email] = 'This email is already in use'
       session[:email] = params[:email]
       redirect '/sign_up'
     end
