@@ -11,5 +11,7 @@ feature 'having password confirmation' do
     register_error
 
     expect{register_error}.not_to change(User, :count)
+    expect(current_path).to eq "/sign_up"
+    expect(page).to have_content 'Password and confirmation password do not match'
   end
 end

@@ -1,20 +1,22 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/app/bookmark.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/app/app.rb": [
         1,
         null,
         1,
         1,
+        1,
         null,
+        1,
+        null,
+        1,
+        1,
         1,
         null,
         1,
         1,
-        null,
-        1,
-        1,
-        80,
+        78,
         null,
         null,
         null,
@@ -23,7 +25,13 @@
         null,
         null,
         1,
-        10,
+        12,
+        8,
+        null,
+        4,
+        4,
+        null,
+        null,
         null,
         null,
         1,
@@ -32,12 +40,19 @@
         null,
         9,
         9,
+        9,
+        2,
+        2,
+        null,
+        null,
+        7,
+        null,
         null,
         null,
         1,
-        19,
-        19,
-        19,
+        17,
+        17,
+        17,
         null,
         null,
         1,
@@ -65,7 +80,7 @@
         1,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/app/data_mapper_setup.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/app/data_mapper_setup.rb": [
         1,
         1,
         1,
@@ -79,7 +94,7 @@
         1,
         1
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/app/models/user.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/app/models/user.rb": [
         1,
         1,
         null,
@@ -100,7 +115,7 @@
         1,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/spec/features/add_tags_spec.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/spec/features/add_tags_spec.rb": [
         null,
         null,
         null,
@@ -120,7 +135,7 @@
         null,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/spec/features/creating_links_spec.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/spec/features/creating_links_spec.rb": [
         null,
         1,
         1,
@@ -136,7 +151,7 @@
         null,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/spec/features/feature_tests_spec.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/spec/features/feature_tests_spec.rb": [
         null,
         null,
         null,
@@ -153,7 +168,7 @@
         null,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/spec/features/filtering_by_tag_spec.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/spec/features/filtering_by_tag_spec.rb": [
         null,
         null,
         null,
@@ -184,7 +199,7 @@
         null,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/spec/features/multiple_tags_spec.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/spec/features/multiple_tags_spec.rb": [
         null,
         null,
         null,
@@ -203,7 +218,7 @@
         null,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/spec/features/password_confirmation_spec.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/spec/features/password_confirmation_spec.rb": [
         1,
         1,
         1,
@@ -217,10 +232,12 @@
         1,
         null,
         2,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/kathicks/Dropbox/Makers Academy - Main CoursE/Week 4/bookmark-manager/spec/features/user_signin_spec.rb": [
+      "/Users/varvara/Google Drive/Makers Academy/bookmark-manager-Kat/spec/features/user_signin_spec.rb": [
         1,
         1,
         1,
@@ -240,6 +257,6 @@
         null
       ]
     },
-    "timestamp": 1485518868
+    "timestamp": 1485527068
   }
 }
