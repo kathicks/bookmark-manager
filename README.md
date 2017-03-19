@@ -52,6 +52,8 @@ I would like to filter links by tag
 * Run `$ shotgun` in the command line to run the app
 * Go to `localhost:9393` in a browser to view and interact with the app
 
+You can also view the deployed version [here](https://damp-hollows-89172.herokuapp.com/).
+
 ### Running the tests
 
 * Within the root of the directory, run `$ rspec` to run the tests and see the results in the command line
