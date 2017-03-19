@@ -67,9 +67,22 @@ I would like to filter links by tag
 
 ### Approach
 
+* With regard to the data structure used:
+  * We set it up to have a many-to-many relationship between links and tags, which allowed links to have multiple tags
+  * We then had a one-to-many relationship between users and tags
+* The web app architecture follows the MVC pattern, as with other projects
+
 ### Reflections
 
+* Found this a really interesting project and felt like we were building something 'real'
+* Was interesting to read up about password hashing
+* Deploying to Heroku was quite tricky - but interesting to see how you set up a production database
+* Was also interesting to see how the models changed from this project and the last (see [Battle](https://github.com/KatHicks/battle)) as they went from classes full of methods to essentially schemas for the database tables
+
 ### Ideas for extension
+
+* Would be nice to give our app some styling
+* Would also be good to add proper buttons for the links filtering, rather than just leaving them as routes
 
 ### Collaborators
 
